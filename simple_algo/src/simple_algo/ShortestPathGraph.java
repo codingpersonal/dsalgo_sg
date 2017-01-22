@@ -44,7 +44,18 @@ public class ShortestPathGraph {
 			}
 		}
 
-		return 0;
+		return -1;
+	}
+	
+	// non weighted edges
+	// DAG
+	// dijkstra algo
+	public static int findWeightedShortestPath(
+		Map<Integer, Map<Integer, Integer>> edges,		// Map of (start node -> (edge node -> edge weight))
+		int start, 
+		int end
+	) {
+		return -1;
 	}
 
 }
