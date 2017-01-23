@@ -61,7 +61,7 @@ public class ShortestParkingRearrangement {
 						// swap this car with the empty spot
 						int next_car_to_move = inputSpots.get(i);
 						final_seq += next_car_to_move + "::";
-						
+
 						// swap the empty spot with this car
 						inputSpots.set(currEmptySpotIndex, next_car_to_move);
 						inputSpots.set(i, -1);
