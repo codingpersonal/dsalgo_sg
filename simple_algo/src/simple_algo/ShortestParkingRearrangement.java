@@ -27,11 +27,11 @@ public class ShortestParkingRearrangement {
 	// the moves are represented by :: seprator. e.g., 4::2::5::6 and so on
 	// this function mutates the input list
 	static public String moveCars(List<Integer> inputSpots, List<Integer> opSpots) {
-		
+
 		if (inputSpots.size() != opSpots.size()) {
 			return "invalid state";
 		}
-		
+
 		int currEmptySpotIndex = -1;
 		
 		Map<Integer, Integer> carToSpotMapping = new HashMap<>();
@@ -44,7 +44,7 @@ public class ShortestParkingRearrangement {
 
 		currEmptySpotIndex = carToSpotMapping.get(-1);
 		String final_seq = "";
-
+		
 		while (!isEqual(inputSpots, opSpots)) {
 			System.out.println("empty spot is: " +  currEmptySpotIndex);
 			if (opSpots.get(currEmptySpotIndex) == -1) {
