@@ -10,14 +10,14 @@ import java.util.Arrays;
  * 
  */
 public class NextBigNumber {
-	
+
 	private String findJustNext(String in) {
 		if (in.length() < 2) {
 			return in;
 		}
 		char base_num = in.charAt(0);
 		char just_bigger_char = 0;
-		
+
 		// sort the string
 		char [] chars = in.toCharArray();
 		Arrays.sort(chars);
